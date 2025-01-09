@@ -1,12 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Basic Index Page</title>
+    <title>WDD 231 - Miroslav Michalsky</title>
+    <meta name="description"
+        content="WDD 231 - Miroslav Michalsky - index page for this course main site">
+    <meta name="author" content="Miroslav Michalsky">
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/cert-filter.js" defer></script>
+    <script src="scripts/responsive.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <h1>Welcome to My Website</h1>
-    <p>This is a basic index.html page.</p>
+    <div class="body-wrapper">
+        <header>
+            <div id="header-wrapper">
+                <img id="mypic" src="images/myphoto.jpeg" alt="My photograph">
+                <h1>Miroslav Michalsky</h1>
+            </div>
+            <button id="menu" aria-label="Filters"></button>
+            <nav class="navigation">
+                <a href="https://msky878.github.io/wdd231" class="yellow-font">Home</a>
+                <a href="#">Chamber</a>
+                <a href="https://github.com/msky878/">GitHub Profile</a>
+                <a href="https://www.linkedin.com/in/miroslav-msky">LinkedIn</a>
+            </nav>
+        </header>
+
+        <main>
+            <div class="main-split">
+                <section class="card left-panel">
+                    <h2>Course Work</h2>
+                    <div class="left-wrapper">
+                        <ul>
+                            <li>&nbsp;</li>
+                            <li>&nbsp;</li>
+                            <li>&nbsp;</li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="card right-panel">
+                    <h2>Ostrava, Czechia</h2>
+                    <div class="right-wrapper">
+                        <img id="citypic" src="images/ostrava.jpg" alt="Ostrava">
+                        <p class="pic-desc">Panorama of Ostrava</p>
+                    </div>
+                </section>
+            </div>
+            <section class="card bottom-panel">
+                <h2>Web and Computer Programming Certificate</h2>
+                <div class="cert-wrapper">
+                    <div class="filter-btns">
+                        <button class="filter-btn" id="cert-all">All</button>
+                        <button class="filter-btn" id="cert-cse">CSE</button>
+                        <button class="filter-btn" id="cert-wdd">WDD</button>
+                    </div>
+                    <p id="cert-credits"></p>
+                    <div class="cert-grid">
+
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div>
+                <p>
+                    &#169;
+                    <span id="currentyear"></span>
+                    &#127757; Miroslav Michalsky &#127757; Czechia
+                    <img id="flag" src="images/czech_flag.png" alt="Flag of Czechia">
+                </p>
+                <p class="yellow-font" id="lastModified"></p>
+            </div>
+        </footer>
+    </div>
 </body>
+
 </html>

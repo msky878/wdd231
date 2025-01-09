@@ -1,0 +1,295 @@
+:root {
+    --color-theme: #316360;
+    --body-width: 80rem;
+    --edges: 0.25rem;
+}
+
+body {
+    font-family: "Lora", serif;
+}
+
+h1,
+h2,
+h3,
+footer,
+.filter-btn {
+    font-family: "Outfit", sans-serif;
+    text-align: center;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.navigation {
+    background-color: darkslategray;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.navigation a {
+    color: white;
+    display: block;
+    padding: 0.5rem;
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.navigation a:hover {
+    color: white;
+    background-color: gray;
+}
+
+h1 {
+    color: white;
+    background-color: var(--color-theme);
+    text-align: center;
+    font-size: 2em;
+    padding: 1rem;
+    font-weight: 300;
+    margin-left: 1em;
+}
+
+h2 {
+    color: white;
+    background-color: var(--color-theme);
+    border-top-left-radius: var(--edges);
+    border-top-right-radius: var(--edges);
+    margin: -1px;
+    padding: 0.5rem;
+    font-weight: 400;
+}
+
+.yellow-font {
+    color: yellow !important;
+}
+
+.body-wrapper {
+    max-width: var(--body-width);
+    margin: 0 auto;
+}
+
+footer {
+    background-color: var(--color-theme);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    font-weight: 300;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    padding: 1rem;
+}
+
+.main-split{
+    display: grid;
+    grid-template: 1fr/ 2fr 1fr;
+    grid-gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.right-panel ul {
+    padding: 2rem;
+}
+
+.right-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5em 0;
+}
+
+.right-panel li {
+    padding-top: 0.5rem;
+}
+
+.card {
+    border: 1px solid var(--color-theme);
+    border-radius: var(--edges);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+#lastModified {
+    font-size: 0.85rem;
+}
+
+h3 {
+    width: 80%;
+    margin: 0 auto;
+    font-weight: 700;
+}
+
+.pic-desc {
+    color: gray;
+    font-size: 0.85rem;
+    text-align: center;
+}
+
+.flex {
+    display: flex;
+}
+
+.left-wrapper {
+    padding: 2rem;
+    display: grid;
+    grid-template: 5fr 1fr 3fr/ 1fr 1fr 1fr 1fr;
+}
+
+#mypic {
+    width: 4em;
+    height: auto;
+    margin-left: 1rem;
+    grid-column: 4 / 5;
+    grid-row: 1/2;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+#flag {
+    width: 3em;
+    height: auto;
+    margin-left: 1em;
+    margin-bottom: -0.5em;
+}
+
+#citypic {
+    width: 80%;
+    height: auto;
+}
+
+p {
+    line-height: 1.7;
+}
+
+#header-wrapper{
+    width: 100%;
+    background-color: var(--color-theme);
+    justify-content: center;
+    align-items: center;
+    padding: 1em 0;
+}
+
+#header-wrapper,
+footer{
+    display: flex;
+}
+
+.filter-btns{
+    display: flex;
+    justify-content: center;
+    gap: 0.2em;
+    border-bottom: 1px solid #333;
+    padding: 0.5em;
+}
+
+.filter-btn{
+    background-color: #000;
+    color: white;
+    border: none;
+    padding: 0.5em;
+    border-radius: var(--edges);
+    width: 5em;
+    cursor: pointer;
+}
+
+.filter-btn:hover{
+    background-color: #333;
+}
+
+.cert-grid{
+    display: grid;
+    grid-template: 1fr / 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center; 
+    padding: 1em 0 0 0;
+}
+
+.cert-card{
+    width: 90%;
+    padding: 2%;
+    margin-bottom: 2%;
+    text-align: center;
+    font-weight: bold;
+    border-radius: var(--edges);
+}
+
+.cert-card-f{
+    background-color: darkslategray;
+    color: white;
+}
+
+.cert-card-t{
+    background-color: #eee;
+    color: #333;
+}
+
+#cert-credits{
+    text-align: center;
+}
+
+:root {
+    --color-theme: #316360;
+    --body-width: 80rem;
+    --edges: 0.75rem;
+}
+
+#menu {
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .main-split{
+        display: block;
+    }
+
+    .left-panel{
+        margin-bottom: 1rem;
+    }
+
+    .cert-grid{
+        grid-template: 1fr / 1fr;
+    }
+
+    #menu {
+        font-size: 1.5rem;
+        border: 0;
+        background: none;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        display: block;
+    }
+    
+    #menu::before {
+        content: "☰";
+        color: white;
+    }
+    
+    #menu.open::before {
+        content: "⨯";
+        color: white;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .navigation a {
+        display: none;
+        padding: 0.5rem;
+        font-size: 1.2em;
+    }
+
+    .open a {
+        display: block;
+        font-size: 1.2em;
+    }
+    
+}

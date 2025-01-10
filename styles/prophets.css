@@ -1,0 +1,55 @@
+body {
+    width: 80%;
+    margin: auto;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h1 {
+    text-align: center;
+    width: 100%;
+    font-weight: bold;
+    color: darkred;
+}
+
+main {
+    background-color: #dddddd;
+    padding: 1rem;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+#cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+section{
+    border: 1px solid darkred;
+    background-color: #995555;
+    padding: 1rem;
+    width: 87%;
+    margin: 0 0 0.5rem 0;
+}
+
+h2{
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+p{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 170px;
+    height: auto;
+}
+
+footer{
+    text-align: center;
+    margin: 2rem auto 2rem auto;
+}

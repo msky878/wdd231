@@ -1,0 +1,60 @@
+{
+  "members": [
+      {
+          "name": "Technologicke Inovace s.r.o.",
+          "address": "Silicon Valley Blvd 123, Praha",
+          "phonenumber": "+420 123 456 789",
+          "url": "https://www.techinovace.cz",
+          "imgurl": "https://api.freelogodesign.org/assets/thumb/logo/66a4d0eec4aa4792b3d0d24ba4a9d7d4_300.png?t=638470739414560000",
+          "membership": 1
+      },
+      {
+          "name": "Zelena Energie a.s.",
+          "address": "Obnovitelna 456, Brno",
+          "phonenumber": "+420 987 654 321",
+          "url": "https://www.zelenaenergie.cz",
+          "imgurl": "https://api.freelogodesign.org/assets/thumb/logo/52bffef6731646f3b6ede2a987ab3a46_300.png?t=638315133770700000",
+          "membership": 2
+      },
+      {
+          "name": "Zdravi Prvi s.r.o.",
+          "address": "Wellness Ave 789, Ostrava",
+          "phonenumber": "+420 555 789 012",
+          "url": "https://www.zdraviprvi.cz",
+          "imgurl": "https://api.freelogodesign.org/assets/thumb/logo/0dd56afec2af48a282b9642e6c9effae_300.png",
+          "membership": 3
+      },
+      {
+          "name": "EduTech Vzdelavani s.r.o.",
+          "address": "Knowledge Rd 101, Plzen",
+          "phonenumber": "+420 321 432 123",
+          "url": "https://www.edutech.cz",
+          "imgurl": "https://api.freelogodesign.org/assets/thumb/logo/90c631c39dbd46e9905a49368dd0206e_300.png",
+          "membership": 1
+      },
+      {
+          "name": "Mestsky Rozvoj a.s.",
+          "address": "Cityscape Dr 202, Liberec",
+          "phonenumber": "+420 654 321 987",
+          "url": "https://www.mestskyrozvoj.cz",
+          "imgurl": "https://api.freelogodesign.org/assets/thumb/logo/c781d797d87943f9b4c8fb4661066bb0_300.png",
+          "membership": 2
+      },
+      {
+          "name": "FinTech Inovace s.r.o.",
+          "address": "Wall Street 303, Praha",
+          "phonenumber": "+420 987 654 321",
+          "url": "https://www.fintechinovace.cz",
+          "imgurl": "https://api.freelogodesign.org/assets/thumb/logo/7911691_300.png",
+          "membership": 3
+      },
+      {
+          "name": "Kreativni Design Studio s.r.o.",
+          "address": "Art Blvd 404, Brno",
+          "phonenumber": "+420 123 987 654",
+          "url": "https://www.kreativnidesign.cz",
+          "imgurl": "https://api.freelogodesign.org/assets/thumb/logo/7896305_300.png",
+          "membership": 1
+      }
+  ]
+}

@@ -1,0 +1,166 @@
+:root{
+    --color-primary: #ccccff;
+    --color-secondary: #9999ff;
+    --color-dark: #666699;
+    --body-width: 80rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body{
+    height: 100%;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Lora", serif;
+}
+
+header,
+footer{
+    background-color: var(--color-primary);
+    padding: 0 1em;
+}
+
+main{
+    padding: 0 1em;
+}
+
+#header-wrapper,
+#footer-wrapper{
+    display: flex;
+    justify-content: space-between;
+    max-width: var(--body-width);
+    margin: 0 auto;
+}
+
+#header-logo{
+    display: flex;
+    padding: 0.5em 0;
+}
+
+#header-logo img{
+    width: 4em;
+    height: auto;
+    margin-right: 1em;
+}
+
+#header-logo h2{
+    font-size: 1.75em;
+}
+
+#header-logo h3{
+    color: #222;
+    font-size: 1.1em;
+}
+
+#header-nav{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: end;
+    padding: 0.5em 0;
+}
+
+#header-nav a{
+    text-decoration: none;
+    color: #000;
+    font-size: 1.1em;
+    padding: 0.5em;
+}
+
+#header-nav a:hover{
+    background-color: var(--color-secondary);
+    color: #fff;
+}
+
+.nav-active{
+    text-decoration: underline !important;
+}
+
+#menu {
+    display: none;
+}
+
+#footer-wrapper{
+    padding: 1em 0;
+}
+
+#footer-social{
+    display: flex;
+    justify-content: space-evenly;
+    width: 15em;
+}
+
+#footer-social img{
+    width: 3em;
+    height: 3em;
+}
+
+#main-wrapper{
+    max-width: var(--body-width);
+    margin: 1.25em auto 1.25em auto;
+}
+
+#display-switch{
+    display: flex;
+    justify-content: center;
+    padding: 0.5em 0;
+    gap: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+#display-switch button{
+    cursor: pointer;
+    padding: 0.5em 0.5em 0.25em 0.5em;
+    margin: 0;
+}
+
+#display-switch img{
+    width: 2em;
+    height: 2em;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    align-items: center;
+    justify-items: center;
+    gap: 1em;
+}
+
+.list{
+    display: block;
+}
+
+.directory-card-grid{
+    width: 94%;
+    border: 2px solid var(--color-dark);
+    border-radius: 0.5em;
+    padding: 2em 0.5em ;
+    text-align: center;
+    white-space: nowrap;
+    height: 87%;
+}
+
+.directory-card-grid img{
+    width: 100%;
+    height: 100%;
+    max-width: 300px;
+    max-height: 300px;
+}
+
+.directory-card-list{
+    width: 94%;
+    display: block;
+    padding: 1em;
+    align-items: center;
+}
+
+.directory-card-list2{
+    background-color: #eee;
+}

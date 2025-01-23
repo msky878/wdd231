@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W02: Chamber Directory Page</title>
+    <meta name="description"
+        content="W02: Chamber Directory Page">
+    <meta name="author" content="Miroslav Michalsky">
+
+    <link rel="icon" href="faviconc.ico">
+
+    <meta property="og:title" content="W02: Chamber Directory Page">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/ostrava-business1.jpg">
+    <meta property="og:url" content="https://msky878.github.io/wdd231/chamber/directory.html">
+
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/base-small.css">
+
+    <script src="scripts/resp-menu.js" defer></script>
+    <script src="scripts/dates.js" defer></script>
+    <script src="scripts/directory.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
+
+
+</head>
+
+<body>
+    <header>
+        <div id="header-wrapper">
+            <div id="header-logo">
+                <img src="images/logo.png" alt="Ostrava Chamber of Commerce logo">
+                <div>
+                    <h2>Ostrava</h1>
+                    <h3>Chamber of Commerce</h2>
+                </div>
+            </div>
+            <button id="menu" aria-label="Navigation bar"></button>
+            <nav id="header-nav">
+                <a href="#">Home</a>
+                <a href="#" class="nav-active">Directory</a>
+                <a href="#">Join</a>
+                <a href="#">Discover</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div id="main-wrapper">
+            <h1>Business Directory</h1>
+            <div id="display-switch">
+                <button id="display-grid" aria-label="Grid View"><img src="images/grid.png" alt="Grid View"></button>
+                <button id="display-list" aria-label="List View"><img src="images/list.png" alt="List View"></button>
+            </div>
+            <div id="directory">
+
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div id="footer-wrapper">
+            <div>
+                <p><b>Ostrava Chamber of Commerce</b></p>
+                <p>Prokešovo nám. 1803/8</p>
+                <p>702 00 Moravská Ostrava, Czechia</p>
+                <p>info@ostravacc.cz</p>
+                <p>918 273 645</p>
+            </div>
+            <div id="footer-social">
+                <a href="https://youtube.com"><img src="images/youtube.png" alt="YouTube logo/link"></a>
+                <a href="https://twitter.com"><img src="images/twitter.png" alt="Twitter logo/link"></a>
+                <a href="https://linkedin.com"><img src="images/linkedin.png" alt="LinkedIn logo/link"></a>
+            </div>
+            <div>
+                <p>WDD231 Class Project</p>
+                <p>Miroslav Michalsky</p>
+                <p>&#169;2025 Ostrava Chamber of Commerce</p>
+                <p id="lastModified"></p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

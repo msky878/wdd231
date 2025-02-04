@@ -83,4 +83,19 @@
         align-items: center;
     }
 
+    .grid-3c{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1em;
+    }
+
+    .grid-2c{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1em;
+    }
+
+    .home-card section{
+        height: fit-content;
+    }
 }

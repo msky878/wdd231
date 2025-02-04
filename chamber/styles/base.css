@@ -164,3 +164,120 @@ main{
 .directory-card-list2{
     background-color: #eee;
 }
+
+#hero-img{
+    width: 100%;
+    height: auto;
+}
+
+#btn-call-to-action{
+    background-color: var(--color-secondary);
+    color: #fff;
+    padding: 1em 2em;
+    border-radius: 0.25em;
+    text-decoration: none;
+}
+
+#btn-call-to-action:hover{
+    text-decoration: underline;
+}
+
+#hero-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2em;
+}
+
+#hero-text h3{
+    margin: 1em;
+}
+
+.grid-3c{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1em;
+}
+
+.grid-2c{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
+}
+
+.home-card{
+    border-radius: 0.25em;
+    height: 100%;
+}
+
+.home-card h4{
+    background-color: var(--color-dark);
+    color: #fff;
+    border-top-left-radius: 0.25em;
+    border-top-right-radius: 0.25em;
+    padding: 0.2em 1em;
+}
+
+.home-card section{
+    background-color: var(--color-primary);
+    border-bottom-left-radius: 0.25em;
+    border-bottom-right-radius: 0.25em;
+    padding: 0.75em 1em;
+    height: 90%;
+}
+
+#current-weather-section{
+    display: flex;
+}
+
+#current-weather-section img{
+    width: 5em;
+    height: 5em;
+}
+
+.spotlight-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-primary);
+    border-radius: 0.25em;
+}
+
+.spotlight-card h3{
+    margin-bottom: 0.5em;
+    border-bottom: 1px solid #fff;
+    width: 100%;
+    text-align: center;
+    padding: 0.35em 0;
+}
+
+.spotlight-info{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.spotlight-info img{
+    width: 3em;
+    height: 3em;
+    padding: 0 0.5em 0.5em 0.5em;
+}
+
+.spotlight-info-text{
+    font-size: 0.7rem;
+}
+
+.spotlight-info-text a {
+    text-decoration: none;
+}
+
+.spotlight-info-text a:hover {
+    text-decoration: underline;
+}
+
+#business-spotlight{
+    margin-top: 4em;
+    width: 100%;
+}
+

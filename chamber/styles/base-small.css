@@ -98,4 +98,38 @@
     .home-card section{
         height: fit-content;
     }
+
+    .mship-card{
+        width: 90%;   
+        display: block;
+        margin: 2em auto; 
+    }
+    #join-form-wrapper{
+        margin: 2em 0;
+    }
+
+    .join-form input[type=text],
+    .join-form input[type=tel],
+    .join-form input[type=date],
+    .join-form input[type=email]{
+        width: 95%;
+    }
+
+    .join-form input[type=submit]{
+        display: block;
+        margin: 2em auto;
+        width: 50%;
+    }
+
+    .join-form textarea {
+        width: 95%;
+    }
+
+    #joinus-wrapper{
+        display: block;
+    }
+
+    dialog {
+        width: 70%;
+    }
 }

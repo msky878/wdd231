@@ -4,14 +4,14 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>W02: Chamber Home Page</title>
+    <title>W02: Chamber Thank You Page</title>
     <meta name="description"
-        content="W02: Chamber Home Page">
+        content="W02: Chamber Thank You Page">
     <meta name="author" content="Miroslav Michalsky">
 
     <link rel="icon" href="faviconc.ico">
 
-    <meta property="og:title" content="W02: Chamber Home Page">
+    <meta property="og:title" content="W02: Chamber Thank You Page">
     <meta property="og:type" content="website">
     <meta property="og:image" content="images/ostrava-business1.jpg">
     <meta property="og:url" content="https://msky878.github.io/wdd231/chamber/index.html">
@@ -22,8 +22,7 @@
     <script src="scripts/resp-menu.js" defer></script>
     <script src="scripts/dates.js" defer></script>
 
-    <script src="scripts/weather.js" defer></script>
-    <script src="scripts/spotlight.js" defer></script>
+    <script src="scripts/joinus-form.js" defer></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -44,9 +43,9 @@
             </div>
             <button id="menu" aria-label="Navigation bar"></button>
             <nav id="header-nav">
-                <a href="#" class="nav-active">Home</a>
+                <a href="index.html">Home</a>
                 <a href="directory.html">Directory</a>
-                <a href="join.html">Join</a>
+                <a href="join.html" class="nav-active">Join</a>
                 <a href="#">Discover</a>
             </nav>
         </div>
@@ -54,27 +53,13 @@
 
     <main>
         <div id="main-wrapper">
-            <picture>
-                <source media="(min-width: 1200px)" srcset="images/hero-large.webp">
-                <img id="hero-img" src="images/hero-small.webp" alt="Czechia picture">
-            </picture>
-            <div id="hero-text">
-                <h1>Chamber Home Page</h1>
-                <h3>Welcome to Ostrava Chamber of Commerce</h3>
-                <a id="btn-call-to-action" href="join.html">Join us!</a>
-            </div>
-            <div class="grid-3c">
-                <div class="home-card" id="events">
-                    <h4>Events</h4>
-                    <section></section>
-                </div>
-                <div class="home-card" id="weather-current">
-                </div>
-                <div class="home-card" id="weather-forecast">
-                </div>
-            </div>
-            <div class="grid-2c" id="business-spotlight">
-            </div>
+            <h1>Thank you for joining Ostrava's chamber of commerce!</h1>
+            <h3>Your application has been received and currently is being processed - you will receive an email with more instructions shortly.</h3>
+            <br>
+            <h4>Submitted information:</h4>
+
+            <div id="join-form-results"></div>
+
         </div>
     </main>
 

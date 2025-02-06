@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W02: Chamber Join Us Page</title>
+    <meta name="description"
+        content="W02: Chamber Join Us Page">
+    <meta name="author" content="Miroslav Michalsky">
+
+    <link rel="icon" href="faviconc.ico">
+
+    <meta property="og:title" content="W02: Chamber Join Us Page">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/ostrava-business1.jpg">
+    <meta property="og:url" content="https://msky878.github.io/wdd231/chamber/index.html">
+
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/base-small.css">
+
+    <script src="scripts/resp-menu.js" defer></script>
+    <script src="scripts/dates.js" defer></script>
+
+    <script src="scripts/modal.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <div id="header-wrapper">
+            <div id="header-logo">
+                <img src="images/logo.png" alt="Ostrava Chamber of Commerce logo">
+                <div>
+                    <h2>Ostrava</h2>
+                    <h3>Chamber of Commerce</h3>
+                </div>
+            </div>
+            <button id="menu" aria-label="Navigation bar"></button>
+            <nav id="header-nav">
+                <a href="index.html">Home</a>
+                <a href="directory.html">Directory</a>
+                <a href="#" class="nav-active">Join</a>
+                <a href="#">Discover</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <dialog id="mship-details"></dialog>
+        <div id="main-wrapper">
+            <h1>Join Ostrava's chamber of commerce!</h1>
+            <h3>Business/Organization Registration Form:</h3>
+            <div id="joinus-wrapper">
+                <div id="join-form-wrapper">
+                    <form method="GET" action="thankyou.html" class="join-form">
+                        <label>First Name: <input type="text" name="fname" required autocomplete="given-name" title="Your first name"></label>
+                        <label>Last Name: <input type="text" name="lname" required autocomplete="family-name" title="Your last name"></label>
+                        <label>Organizational Title: <input type="text" name="otitle" autocomplete="organization-title" pattern="[A-Za-z\s-]{7,}" title="Your title in your organization"></label>
+                        <label>Email: <input type="email" name="email" required autocomplete="email" title="Your email" placeholder="example@email.com"></label>
+                        <label>Phone Number: <input type="tel" name="phone" required autocomplete="tel" title="Your phone number"></label>
+                        <label>Business/Organization's Name: <input type="text" name="bname" required autocomplete="organization" title="Name of your business or organization"></label>
+                        
+                        <p>Membership Level: </p>
+                        <label class="join-form-radio"><input type="radio" name="memlevel" value="1" checked> Bronze Membership</label>
+                        <label class="join-form-radio"><input type="radio" name="memlevel" value="2"> Silver Membership</label>
+                        <label class="join-form-radio"><input type="radio" name="memlevel" value="3"> Gold Membership</label>
+                        <label class="join-form-radio"><input type="radio" name="memlevel" value="0"> NP Membership (for non-profit org., no fee)</label>
+
+                        <label>Business/Organization's Description: <textarea name="bdesc" title="Description of your business or organization"></textarea></label>
+                        <input type="hidden" name="timestamp" id="form-timestamp" value="">
+                            
+                        <input type="submit" value="Register">
+                    </form>
+                    <script>
+                        var field = document.querySelector('#form-timestamp');
+                        var date = Date.now();
+                        // Set the date
+                        field.value = date;
+                    </script>
+                        
+                </div>
+                <div id="mship-wrapper">
+                    <div class="mship-card">
+                        <h4>Bronze Membership Level</h4>
+                        <button id="mship-1">Learn Mode</button>
+                    </div>
+                    <div class="mship-card">
+                        <h4>Silver Membership Level</h4>
+                        <button id="mship-2">Learn Mode</button>
+                    </div>
+                    <div class="mship-card">
+                        <h4>Gold Membership Level</h4>
+                        <button id="mship-3">Learn Mode</button>
+                    </div>
+                    <div class="mship-card">
+                        <h4>Non Profit Membership Level</h4>
+                        <button id="mship-0">Learn Mode</button>
+                    </div>
+                </div>
+            </div>
+    </main>
+
+    <footer>
+        <div id="footer-wrapper">
+            <div>
+                <p><b>Ostrava Chamber of Commerce</b></p>
+                <p>Prokešovo nám. 1803/8</p>
+                <p>702 00 Moravská Ostrava, Czechia</p>
+                <p>info@ostravacc.cz</p>
+                <p>918 273 645</p>
+            </div>
+            <div id="footer-social">
+                <a href="https://youtube.com"><img src="images/youtube.png" alt="YouTube logo/link"></a>
+                <a href="https://twitter.com"><img src="images/twitter.png" alt="Twitter logo/link"></a>
+                <a href="https://linkedin.com"><img src="images/linkedin.png" alt="LinkedIn logo/link"></a>
+            </div>
+            <div>
+                <p>WDD231 Class Project</p>
+                <p>Miroslav Michalsky</p>
+                <p>&#169;2025 Ostrava Chamber of Commerce</p>
+                <p id="lastModified"></p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

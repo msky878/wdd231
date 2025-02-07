@@ -1,4 +1,4 @@
-@media only screen and (max-width: 510px) {
+@media only screen and (max-width: 640px) {
 
     .grid {
         display: block;
@@ -131,5 +131,52 @@
 
     dialog {
         width: 70%;
+    }
+
+    .discover-card{
+        grid-template-areas:
+        "h2"
+        "figure"
+        "p"
+        "address"
+        "button";
+        text-align: center;
+    }
+
+    #discover-cards-wrapper{
+        display: grid;
+        grid-template-areas:
+        "div";
+        gap: 1em;
+    }
+
+    #discover{
+        display: grid;
+        grid-template-areas:
+        "div";
+        gap: 1em;
+    }
+
+    
+}
+
+@media only screen and (min-width: 641px) and (max-width: 1024px) {
+    #discover-cards-wrapper{
+        display: grid;
+        grid-template-areas:
+        "div";
+        gap: 1em;
+    }
+
+    #discover{
+        display: grid;
+        grid-template-areas:
+        "div";
+        gap: 1em;
+    }
+
+    #discover-sidebar{
+        width: 60%;
+        margin: 0 auto;    
     }
 }

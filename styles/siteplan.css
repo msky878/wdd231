@@ -1,0 +1,49 @@
+body{
+    font-family: "Nunito Sans", serif;
+    width: 80rem;
+    margin: 0 auto;
+    background-color: white;
+}
+
+h1,
+h4{
+    font-family: "Rubik", serif;
+    color: #00376b;
+}
+
+li {
+    color: black; /* Ensure the text color remains black */
+}
+
+li::marker {
+    color: #00b0d3; /* Change the color of the list item markers */
+}
+
+#prim-c{
+    background-color: #00b0d3;
+    display: inline;
+    border-radius: 50%;
+}
+
+#sec-c{
+    background-color: #00376b;
+    display: inline;
+    border-radius: 50%;
+}
+
+#ext-c{
+    background-color: #e9bc03;
+    display: inline;
+    border-radius: 50%;
+}
+
+
+#wm{
+    width: 20%;
+    height: auto;
+}
+
+#wd{
+    width: 50%;
+    height: auto;
+}

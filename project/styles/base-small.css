@@ -1,0 +1,108 @@
+:root {
+    --color-primary: #00b0d3;
+    --color-secondary: #00376b; 
+    --color-extra: #e9bc03;
+}
+
+@media only screen and (max-width: 640px) {
+
+    main{
+        width: 100%;
+    }
+
+    #menu {
+        font-size: 1.5rem;
+        border: 0;
+        background: none;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        display: block;
+    }
+    
+    #menu::before {
+        content: "☰";
+        color: var(--color-secondary);
+    }
+    
+    #menu.open::before {
+        content: "⨯";
+        color: var(--color-secondary);
+    }
+
+    header{
+        display: block;
+        justify-content: space-between;
+        padding: 0;
+        width: 100%;
+        white-space: normal;
+    }
+    
+    #header-logo{
+        display: block;
+        padding: 0.5em;
+        text-align: center;
+    }
+    
+    #header-logo img{
+        width: 5em;
+        height: 5em;
+        margin: 0 auto;
+    }
+    
+    #header-logo h2{
+        font-size: 2em;
+        text-align: center;
+    }
+    
+    #header-logo h3{
+        font-size: 1.5em;
+        letter-spacing: 0.2em;
+    }
+
+    #header-nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+    
+    #header-nav a {
+        display: none;
+        padding: 0.5rem;
+        font-size: 1.5em;
+        text-align: center;
+        width: 100%;
+        margin: 0;
+        padding: 1em 0;
+        border-top: 2px solid var(--color-secondary) !important;
+    }
+
+    #header-nav a:first-child{
+        margin-top: 1em;
+    }
+
+    .open a {
+        display: block !important;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        width: 100%;
+    }
+
+    #footer-text{
+        text-align: center;
+    }
+
+    #footer-text h4{
+        color: #fff;
+        font-size: 1.25em;
+        margin-bottom: 0.5em;
+        border-left: none;
+        padding-left: 0.3em;
+    }
+
+}

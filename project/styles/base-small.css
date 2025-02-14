@@ -105,4 +105,20 @@
         padding-left: 0.3em;
     }
 
+    .grid-two-cols{
+        grid-template-columns: 1fr;
+    }
+
+    .grid-three-cols{
+        grid-template-columns: 1fr;
+    }
+
+    .main-body{
+        padding: 0 0.5em;
+    }
+
+    #learn-lang{
+        margin: 0;
+    }
+
 }

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Information - Moravian-Silesian Tourist Advisor</title>
+    <meta name="description"
+        content="Relevant information regarding the region for the Moravian-Silesian Tourist Advisor.">
+    <meta name="author" content="Miroslav Michalsky">
+    <link rel="icon" href="faviconp.ico">
+
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/base-medium.css">
+    <link rel="stylesheet" href="styles/base-small.css">
+
+    <script src="scripts/dates.js" defer></script>
+    <script src="scripts/responsive.js" defer></script>
+
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/currency.js" defer></script>
+    <script src="scripts/modal.js" defer></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Quicksand:wght@300..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+    <!-- Twitter Tags -->
+    <meta name="twitter:title" content="Information - Moravian-Silesian Tourist Advisor">
+    <meta name="twitter:description" content="Relevant information regarding the region for the Moravian-Silesian Tourist Advisor.">
+    <meta name="twitter:image" content="https://farm6.staticflickr.com/5510/14338202952_93595258ff_z.jpg">
+    <meta name="twitter:card" content="summary">
+
+    <!-- Facebook Tags -->
+    <meta property="og:title" content="Information - Moravian-Silesian Tourist Advisor">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/ostrava-business1.jpg">
+    <meta property="og:url" content="https://msky878.github.io/wdd231/chamber/info.html">
+</head>
+
+<body>
+    <header>
+        <div id="header-logo">
+            <a href="index.html">
+                <img src="images/logo.png" alt="Moravian-Silesian Tourist Advisor Logo">
+            </a>
+            <a href="index.html">
+                <div>
+                    <h2>Moravian-Silesian</h2>
+                    <h3>Tourist Advisor</h3>
+                </div>
+            </a>
+        </div>
+        <button id="menu" aria-label="Navigation bar"></button>
+        <nav id="header-nav">
+            <a href="index.html">Home</a>
+            <a href="events.html">Events</a>
+            <a href="discover.html">Discover</a>
+            <a href="info.html" class="nav-active">Information</a>
+            <a href="suggest.html">Suggest</a>
+        </nav>
+    </header>
+    <main>
+        <dialog id="learnLanguage"></dialog>
+
+        <div class="hero-container">
+            <picture>
+                <source media="(max-width: 640px)" srcset="https://placehold.co/100x100">
+                <source media="(max-width: 1280px)" srcset="https://placehold.co/100x100">
+                <img src="https://placehold.co/400x100" loading="eager" alt="Heading image" style="width: 100%;">
+            </picture>
+            <div class="hero-text">
+                <h1>General Information</h1>
+            </div>
+        </div>
+
+        <div class="main-body">
+        
+            <p>The Moravian-Silesian Region, located in the northeastern part of the Czech Republic, has a mix of industrial cities, natural landscapes, and cultural heritage.</p>
+            
+            <h2>Basics</h2>
+
+            <h3>Language:</h3>
+            <p>Czech is the official language. English is somewhat spoken in larger cities like Ostrava, but in smaller towns, it’s less common. Learning a few basic Czech phrases can be helpful.</p>
+            <button id="learn-lang">Learn some basic phrases in Czech!</button>
+
+            <h3>Currency:</h3>
+            <p>Czech koruna (CZK). Some places may accept euros, but it’s not widely used. Credit cards are accepted in most locations, but small shops and rural areas may require cash.</p>
+            <h4>Current Exchange Rates:</h4>
+            <div id="currency"></div>
+
+            <h3>Weather:</h3>
+            <p>Winters are cold with snow, and summers are warm. If visiting in winter, pack warm clothing, and in summer, bring layers since evenings can be cooler. The weather in the Moravian-Silesian Region varies significantly across seasons, so your packing and travel plans should take this into account.</p>
+            <h4>Current Weather:</h4>
+            <div class="grid-three-cols" id="weather-wrapper">
+                <div id="weather-ostrava">
+                    <h5>Ostrava:</h5>
+                </div>
+                <div id="weather-opava">
+                    <h5>Opava:</h5>
+                </div>
+                <div id="weather-ostravice">
+                    <h5>Ostravice:</h5>
+                </div>
+            </div>
+
+            <h3>Health and Safety:</h3>
+            <h4>Emergency Contacts:</h4>
+            <p><b>112</b>: for general emergencies, similar to 911 in the USA - can speak English</p>
+            <p><b>155</b>: for ambulance - but generally only speak Czech (you can use 112 instead)</p>
+            <h4>Health Insurance:</h4>
+            <p>EU citizens can use the European Health Insurance Card (EHIC). Others should have travel insurance.</p>
+            <h4>Tap Water is safe to drink.</h4>
+
+            <h3>Transporation:</h3>
+            <p>The main airport is Leoš Janáček Airport Ostrava (OSR), but most international flights connect through Prague or Katowice (Poland).</p>
+            <h4>Public Transporation:</h4>
+            <p>Trams, buses, and trains operate in cities like Ostrava. Tickets must usually be bought in advance or via mobile apps.</p>
+            <p>Trains connect Ostrava to Prague, Poland, and Slovakia. Check schedules in advance.</p>
+            <h4>Driving:</h4>
+            <p>Roads are in good condition, and car rentals are available. A vignette (toll sticker) is required for highways. Winter tires are required in snowy months.</p>
+
+        </div>
+
+        <div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d439639.71093548904!2d18.035920285569485!3d49.840455131876155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1scs!2scz!4v1739524642969!5m2!1scs!2scz" id="gmapsinfo" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <div class="main-body">
+
+            <h2>Cultural & Practical Tips</h2>
+
+            <h3>Restaurants:</h3>
+            <p>We have very strong beer culture. The Czech Republic has the highest beer consumption per capita. We take pride in their beer, and it’s often cheaper than water.</p>
+            <p>Waiters don’t rush to your table—wave or say "Prosím" (please) to get their attention. The bill is not automatically brought to you. Ask for it: "Účet, prosím." (The bill, please.) Czechs usually pay individually. Let the waiter know "Zaplatíme zvlášť" (We’ll pay separately).</p>
+            <p>Tipping is around 10% in restaurants is appreciated but not always expected.</p>
+
+            <h3>Public Behavior:</h3>
+            <p>Czechs are generally friendly but may seem reserved at first. A smile and polite greeting go a long way. We appreciate peace and quiet in public places like trains, trams, and restaurants. Loud conversations can be frowned upon.</p>
+            <p>If invited to a local’s home, expect to take off your shoes at the door. Some hosts offer slippers.</p>
+            <p>A firm handshake with eye contact is common for formal introductions. When addressing someone formally, use "pan" (Mr.) or "paní" (Mrs./Ms.) followed by their last name.</p>
+
+        </div>
+
+        <div class="grid-three-cols">
+            <picture>
+                <source media="(max-width: 1280px)" srcset="https://placehold.co/100x100">
+                <img src="https://placehold.co/100x100" loading="eager" alt="Welcome Image" style="width: 100%;">
+            </picture>
+            <picture>
+                <source media="(max-width: 1280px)" srcset="https://placehold.co/100x100">
+                <img src="https://placehold.co/100x100" loading="eager" alt="Welcome Image" style="width: 100%;">
+            </picture>
+            <picture>
+                <source media="(max-width: 1280px)" srcset="https://placehold.co/100x100">
+                <img src="https://placehold.co/100x100" loading="eager" alt="Welcome Image" style="width: 100%;">
+            </picture>
+        </div>
+
+    </main>
+    <footer>
+        <div id="footer-text">
+            <h4>Moravian-Silesian Tourist Advisor</h4>
+            <p>&#169;2025</p>
+            <p>advisor@mstourism.cz</p>
+            <p id="lastModified"></p>
+        </div>
+        <div id="footer-social">
+            <a href="https://instagram.com"><img src="images/instagram.png" alt="Instagram logo/link" loading="lazy" ></a>
+            <a href="https://facebook.com"><img src="images/facebook.png" alt="Facebook logo/link" loading="lazy" ></a>
+            <a href="https://youtube.com"><img src="images/youtube.png" alt="YouTube logo/link" loading="lazy" ></a>
+        </div>
+    </footer>
+</body>
+
+</html>

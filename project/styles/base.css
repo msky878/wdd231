@@ -111,7 +111,7 @@ header{
 
 .nav-active{
     text-decoration: underline !important;
-    text-underline-offset: 0.2em;
+    text-underline-offset: 0.25em;
 }
 
 footer{
@@ -323,3 +323,83 @@ dialog button {
 #learn-lang:hover{
     background-color: var(--color-primary);
 }
+
+#suggest-form{
+    accent-color: var(--color-secondary);
+}
+
+#suggest-form label,
+#suggest-form p{
+    display: block;
+    font-size: 1em;
+    padding-top: 0.25em;
+    color: #111;
+    margin-top: 1em;
+}
+
+#suggest-form input[type=text],
+#suggest-form input[type=tel],
+#suggest-form input[type=email]{
+    display: block;
+    padding: 0.4em;
+    border: 1px solid #111;
+    border-radius: 5px;
+    font-size: 1em;
+    color: #000;
+    width: 20em;
+    border-left: 5px solid #555;
+}
+
+#suggest-form input:required {border-left-color: #d70000;}
+#suggest-form input:focus {border-left-color: var(--color-primary); outline:none;}
+#suggest-form input:required:valid{border-left-color: green;}
+
+#suggest-form input[type=submit]{
+    border: none;
+    text-align: center;
+    background-color: var(--color-secondary);
+    color: #fff;
+    padding: 1em;
+    margin: 2em 15%;
+    width: 70%;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#suggest-form input[type=submit]:hover{
+    background-color: var(--color-primary);
+}
+
+#suggest-form textarea {
+    display: block;
+    font-size: 1.3em;
+    width: 18.95em;
+    height: 7em;
+    border-radius: 5px;
+    border: 1px solid #111;
+    padding: 0.5em;
+}
+
+#suggest-form select{
+    padding: 0.5em;
+    font-size: 1em;
+    border-radius: 5px;
+    margin-top: 0.25em;
+    width: 21.14em;
+}
+
+#suggest-form p{
+    margin-bottom: -1em;
+}
+
+.flex{
+    display: flex;
+    gap: 1.25em
+}
+
+#suggest-form{
+    width: fit-content;
+    margin: 0 auto;
+}
+

@@ -121,4 +121,13 @@
         margin: 0;
     }
 
+    .flex{
+        display: block;
+    }
+
+    #suggest-form p{
+        margin-bottom: 0;
+    }
+    
+
 }

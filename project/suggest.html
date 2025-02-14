@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Suggest a Place - Moravian-Silesian Tourist Advisor</title>
+    <meta name="description"
+        content="Suggest a place to be added to the Moravian-Silesian Tourist Advisor.">
+    <meta name="author" content="Miroslav Michalsky">
+    <link rel="icon" href="faviconp.ico">
+
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/base-medium.css">
+    <link rel="stylesheet" href="styles/base-small.css">
+
+    <script src="scripts/dates.js" defer></script>
+    <script src="scripts/responsive.js" defer></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Quicksand:wght@300..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+    <!-- Twitter Tags -->
+    <meta name="twitter:title" content="Suggest a Place - Moravian-Silesian Tourist Advisor">
+    <meta name="twitter:description" content="Suggest a place to be added to the Moravian-Silesian Tourist Advisor.">
+    <meta name="twitter:image" content="https://farm6.staticflickr.com/5510/14338202952_93595258ff_z.jpg">
+    <meta name="twitter:card" content="summary">
+
+    <!-- Facebook Tags -->
+    <meta property="og:title" content="Suggest a Place - Moravian-Silesian Tourist Advisor">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/ostrava-business1.jpg">
+    <meta property="og:url" content="https://msky878.github.io/wdd231/chamber/suggest.html">
+</head>
+
+<body>
+    <header>
+        <div id="header-logo">
+            <a href="index.html">
+                <img src="images/logo.png" alt="Moravian-Silesian Tourist Advisor Logo">
+            </a>
+            <a href="index.html">
+                <div>
+                    <h2>Moravian-Silesian</h2>
+                    <h3>Tourist Advisor</h3>
+                </div>
+            </a>
+        </div>
+        <button id="menu" aria-label="Navigation bar"></button>
+        <nav id="header-nav">
+            <a href="index.html">Home</a>
+            <a href="discover.html">Discover</a>
+            <a href="info.html">Information</a>
+            <a href="suggest.html" class="nav-active">Suggest</a>
+        </nav>
+    </header>
+    <main>
+        <div class="hero-container">
+            <picture>
+                <source media="(max-width: 640px)" srcset="https://placehold.co/100x100">
+                <source media="(max-width: 1280px)" srcset="https://placehold.co/150x100">
+                <img src="https://placehold.co/400x100" loading="eager" alt="Heading image" style="width: 100%;">
+            </picture>
+            <div class="hero-text">
+                <h1>Suggest a Place</h1>
+            </div>
+        </div>
+
+        <div class="main-body">
+            <h4>Is there something missing?</h4>
+            <p>If you know about any interesting placethat are not featured here, you can suggest it to us here.</p>
+            <h2>Please fill out the form bellow to suggest a place to us!</h2>
+            <form method="GET" action="thankyou.html" id="suggest-form">
+                <h3>Location Information:</h3>
+                <label for="name">Name of Attraction: <input type="text" id="name" name="name" required></label>
+                <label for="address">Address: <input type="text" id="address" name="address" required></label>
+                <label for="description">Description: <textarea id="description" name="description" rows="4" placeholder="(optional)"></textarea></label>
+                <p>Price range:</p>
+                <div class="flex">
+                    <label><input type="radio" name="price" value="free" checked> Free</label>
+                    <label><input type="radio" name="price" value="cheap"> Up to CZK 500</label>
+                    <label><input type="radio" name="price" value="expensive"> Over CZK 500</label>
+                </div>
+                <label for="category">Category:</label>
+                <select id="category" name="category" required>
+                    <option value="" disabled selected>Please Select</option>
+                    <option value="historical">Historical</option>
+                    <option value="natural">Natural</option>
+                    <option value="cultural">Cultural</option>
+                    <option value="adventure">Technical</option>
+                    <option value="other">Other</option>
+                </select>
+                
+                
+
+                <h3>Your Contact Information:</h3>
+                <label>First Name: <input type="text" name="fname" required autocomplete="given-name" title="Your first name"></label>
+                <label>Last Name: <input type="text" name="lname" required autocomplete="family-name" title="Your last name"></label>
+                <label>Email: <input type="email" name="email" required autocomplete="email" title="Your email" placeholder="example@email.com"></label>
+                <label>Phone Number: <input type="tel" name="phone" required autocomplete="tel" title="Your phone number"></label>
+
+                <p>Do you represent the place?</p>
+                <div class="flex">
+                    <label><input type="radio" name="isrep" value="yes" checked> Yes</label>
+                    <label><input type="radio" name="isrep" value="no"> No</label>
+                </div>
+
+                <label>Additional Comments: <textarea name="comments" title="Additional Comments" placeholder="(optional)"></textarea></label>
+                    
+                <input type="submit" value="Send Suggestion">
+            </form>
+        </div>
+
+        <div class="grid-three-cols">
+            <picture>
+                <source media="(max-width: 1280px)" srcset="https://placehold.co/100x100">
+                <img src="https://placehold.co/100x100" loading="eager" alt="Welcome Image" style="width: 100%;">
+            </picture>
+            <picture>
+                <source media="(max-width: 1280px)" srcset="https://placehold.co/100x100">
+                <img src="https://placehold.co/100x100" loading="eager" alt="Welcome Image" style="width: 100%;">
+            </picture>
+            <picture>
+                <source media="(max-width: 1280px)" srcset="https://placehold.co/100x100">
+                <img src="https://placehold.co/100x100" loading="eager" alt="Welcome Image" style="width: 100%;">
+            </picture>
+        </div>
+
+    </main>
+    <footer>
+        <div id="footer-text">
+            <h4>Moravian-Silesian Tourist Advisor</h4>
+            <p>&#169;2025</p>
+            <p>advisor@mstourism.cz</p>
+            <p id="lastModified"></p>
+        </div>
+        <div id="footer-social">
+            <a href="https://instagram.com"><img src="images/instagram.png" alt="Instagram logo/link" loading="lazy" ></a>
+            <a href="https://facebook.com"><img src="images/facebook.png" alt="Facebook logo/link" loading="lazy" ></a>
+            <a href="https://youtube.com"><img src="images/youtube.png" alt="YouTube logo/link" loading="lazy" ></a>
+        </div>
+    </footer>
+</body>
+
+</html>

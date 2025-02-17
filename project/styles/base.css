@@ -374,7 +374,7 @@ dialog button {
 #suggest-form textarea {
     display: block;
     font-size: 1.3em;
-    width: 18.95em;
+    width: 20.5em;
     height: 7em;
     border-radius: 5px;
     border: 1px solid #111;
@@ -403,3 +403,123 @@ dialog button {
     margin: 0 auto;
 }
 
+.filter-btns{
+    display: flex;
+    width: fit-content;
+    margin: 0 auto;
+    justify-content: space-between;
+    gap: 0.5em;
+    margin-top: 2em;
+}
+
+.filter-btns button{
+    border: none;
+    cursor: pointer;
+    font-size: 1.5em;
+    color: #fff;
+    background-color: var(--color-secondary);
+    border-radius: 0.5em;
+    padding: 0.5em;
+    width: 6em;
+}
+
+.filter-btns button:hover{
+    background-color: var(--color-primary);
+}
+
+.filter-btn-a{
+    background-color: var(--color-extra) !important;
+}
+
+.filter-btn-a:hover{
+    background-color: var(--color-primary) !important;
+}
+
+#dir-text{
+    width: 100%;
+    text-align: center;
+    border: none;
+    color: var(--color-primary);
+    margin-bottom: 2em;
+}
+
+.dir-card-g{
+    background-color: #eee !important;
+}
+
+#dir-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1em;
+}
+
+.dir-card{
+    border-radius: 1em;
+    margin-bottom: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1em;
+    width: 93%;
+}
+
+.dir-card img{
+    width: 100%;
+    border: 3px solid #fff;
+}
+
+.dir-card h3{
+    color: var(--color-secondary);
+    border-left: 0.5em solid var(--color-extra);
+    padding-left: 0.5em;
+    border-right: 0.5em solid var(--color-extra);
+    padding-right: 0.5em;
+}
+
+.dir-card-g h3{
+    color: var(--color-primary);
+}
+
+.dir-card a{
+    text-decoration: none;
+    color: #fff;
+    background-color: var(--color-secondary);
+    border-radius: 5px;
+    padding: 0.25em 1em;
+}
+
+.dir-card-g a{
+    background-color: var(--color-primary);
+}
+
+.dir-card a:hover{
+    background-color: var(--color-extra);
+    color: #000;
+}
+
+#form-results{
+    border: 3px solid var(--color-secondary);
+    width: fit-content;
+    min-width: 50%;
+    padding: 1em;
+    border-radius: 0.5em;
+}
+
+#form-results h3,
+#form-results p {
+    display: inline-block;
+}
+
+.main-body h1{
+    color: var(--color-primary);
+}
+
+#suggestions h4{
+    border: 2px solid var(--color-primary);
+    border-radius: 0.5em;
+    padding: 0.5em;
+    display: inline-block;
+    margin-right: 0.75em;
+    margin-bottom: 0.75em;
+}

@@ -5,9 +5,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Suggest a Place - Moravian-Silesian Tourist Advisor</title>
+    <title>Discover - Moravian-Silesian Tourist Advisor</title>
     <meta name="description"
-        content="Suggest a place to be added to the Moravian-Silesian Tourist Advisor.">
+        content="Directory page for the Moravian-Silesian Tourist Advisor, where you can explore famous turist locations in the region.">
     <meta name="author" content="Miroslav Michalsky">
     <link rel="icon" href="faviconp.ico">
 
@@ -18,7 +18,7 @@
     <script src="scripts/dates.js" defer></script>
     <script src="scripts/responsive.js" defer></script>
 
-    <script src="scripts/suggestform.js" defer></script>
+    <script src="scripts/directory.js" defer></script>
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,16 +28,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Quicksand:wght@300..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
 
     <!-- Twitter Tags -->
-    <meta name="twitter:title" content="Suggest a Place - Moravian-Silesian Tourist Advisor">
-    <meta name="twitter:description" content="Suggest a place to be added to the Moravian-Silesian Tourist Advisor.">
+    <meta name="twitter:title" content="Discover - Moravian-Silesian Tourist Advisor">
+    <meta name="twitter:description" content="Directory page for the Moravian-Silesian Tourist Advisor, where you can explore famous turist locations in the region.">
     <meta name="twitter:image" content="https://farm6.staticflickr.com/5510/14338202952_93595258ff_z.jpg">
     <meta name="twitter:card" content="summary">
 
     <!-- Facebook Tags -->
-    <meta property="og:title" content="Suggest a Place - Moravian-Silesian Tourist Advisor">
+    <meta property="og:title" content="Discover - Moravian-Silesian Tourist Advisor">
     <meta property="og:type" content="website">
     <meta property="og:image" content="images/ostrava-business1.jpg">
-    <meta property="og:url" content="https://msky878.github.io/wdd231/chamber/suggest.html">
+    <meta property="og:url" content="https://msky878.github.io/wdd231/chamber/index.html">
 </head>
 
 <body>
@@ -56,17 +56,35 @@
         <button id="menu" aria-label="Navigation bar"></button>
         <nav id="header-nav">
             <a href="index.html">Home</a>
-            <a href="discover.html">Discover</a>
+            <a href="discover.html" class="nav-active">Discover</a>
             <a href="info.html">Information</a>
-            <a href="suggest.html" class="nav-active">Suggest</a>
+            <a href="suggest.html">Suggest</a>
         </nav>
     </header>
     <main>
+        <div class="hero-container">
+            <picture>
+                <source media="(max-width: 640px)" srcset="https://placehold.co/100x100">
+                <source media="(max-width: 1280px)" srcset="https://placehold.co/150x100">
+                <img src="https://placehold.co/400x100" loading="eager" alt="Heading image" style="width: 100%;">
+            </picture>
+            <div class="hero-text">
+                <h1>Discover Our Region</h1>
+            </div>
+        </div>
+
         <div class="main-body">
-            <h1>Thank You for the Tip!</h1>
-            <p>Your suggestion will be processed within a few days.</p>
-            <h2>Recapitulation:</h2>
-            <div id="form-results"></div>
+            <p>Welcome to the Moravian-Silesian region! Nestled in the northeastern corner of Czechia, this diverse region is a hidden gem filled with stunning natural landscapes, rich history, and vibrant cultural attractions. Whether you're looking to explore the breathtaking Beskydy Mountains, visit historical castles, or experience the lively city life of Ostrava, our directory will help you discover the best places to visit. Start your adventure here and uncover the beauty of Moravskoslezský kraj!</p>
+            <div class="filter-btns">
+                <button class="filter-btn-a" id="dir-all">All</button>
+                <button id="dir-cul">Cultural</button>
+                <button id="dir-nat">Natural</button>
+                <button id="dir-tec">Technical</button>
+                <button id="dir-his">Historical</button>
+            </div>
+            <h2 id="dir-text">Discover our cultural, natural, technical and historical places!</h2>
+            <div id="dir-grid"></div>
+            
         </div>
     </main>
     <footer>

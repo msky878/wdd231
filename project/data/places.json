@@ -1,0 +1,138 @@
+{
+    "places": [
+      {
+        "title": "Ostrava Zoo",
+        "description": "A large and modern zoo featuring diverse animal species and beautiful botanical gardens.",
+        "website": "https://www.zoo-ostrava.cz/",
+        "image_url": "https://placehold.co/150x100",
+        "type": 0
+      },
+      {
+        "title": "Dolní Vítkovice",
+        "description": "A former industrial site turned cultural and educational center, home to Bolt Tower and interactive exhibitions.",
+        "website": "https://www.dolnivitkovice.cz/",
+        "image_url": "https://placehold.co/150x100",
+        "type": 2
+      },
+      {
+        "title": "Štramberk Castle and Trúba Tower",
+        "description": "Ruins of a medieval castle with a stunning cylindrical tower offering breathtaking views.",
+        "website": "https://www.stramberk.cz/",
+        "image_url": "https://placehold.co/150x100",
+        "type": 3
+      },
+      {
+        "title": "Pustevny and Radhošť",
+        "description": "A famous mountain resort with scenic trails, wooden architecture, and the statue of Radegast.",
+        "website": "https://www.pustevny.cz/",
+        "image_url": "https://placehold.co/150x100",
+        "type": 1
+      },
+      {
+        "title": "Landek Park Mining Museum",
+        "description": "The largest mining museum in Czechia, showcasing the history of coal mining with underground tours.",
+        "website": "https://www.landekpark.cz/",
+        "image_url": "https://placehold.co/150x100",
+        "type": 2
+      },
+      {
+        "title": "Hukvaldy Castle",
+        "description": "A massive castle ruin offering panoramic views and the birthplace of composer Leoš Janáček.",
+        "website": "https://www.hukvaldy.eu/",
+        "image_url": "https://placehold.co/150x100",
+        "type": 3
+      },
+      {
+        "title": "Beskydy Mountains",
+        "description": "A stunning natural area perfect for hiking, skiing, and enjoying the great outdoors.",
+        "website": "",
+        "image_url": "https://placehold.co/150x100",
+        "type": 1
+      },
+      {
+        "title": "Silesian Ostrava Castle",
+        "description": "A well-preserved historic castle with exhibitions, cultural events, and a medieval atmosphere.",
+        "website": "https://www.slezskoostravskyhrad.cz/",
+        "image_url": "https://placehold.co/150x100",
+        "type": 3
+      },
+      {
+        "title": "New City Hall Viewing Tower",
+        "description": "Ostrava’s tallest tower providing panoramic views of the city and surrounding regions.",
+        "website": "https://www.ostravainfo.cz/",
+        "image_url": "https://placehold.co/150x100",
+        "type": 2
+      },
+      {
+        "title": "Opava Historic Center",
+        "description": "A charming city center with historic buildings, beautiful squares, and cultural landmarks.",
+        "website": "https://www.opava-city.cz/",
+        "image_url": "https://placehold.co/150x100",
+        "type": 0
+      },
+      {
+        "title": "Hradec nad Moravicí Castle",
+        "description": "A fairy-tale castle surrounded by beautiful parks and offering guided tours.",
+        "website": "https://www.zamek-hradec.cz/",
+        "image_url": "https://placehold.co/150x100",
+        "type": 3
+      },
+      {
+        "title": "Muzeum Těšínska",
+        "description": "A museum showcasing the history, culture, and traditions of the Těšín region.",
+        "website": "https://www.muzeumct.cz/",
+        "image_url": "https://placehold.co/150x100",
+        "type": 0
+      },
+      {
+        "title": "Bílá Opava Waterfalls",
+        "description": "A stunning series of waterfalls located along a scenic hiking trail in Jeseníky.",
+        "website": "",
+        "image_url": "https://placehold.co/150x100",
+        "type": 1
+      },
+      {
+        "title": "Technical Museum Tatra",
+        "description": "A museum dedicated to the history of Tatra vehicles, featuring historic cars and trucks.",
+        "website": "https://www.tatramuseum.cz/",
+        "image_url": "https://placehold.co/150x100",
+        "type": 2
+      },
+      {
+        "title": "Čertova Lhotka",
+        "description": "A picturesque rock formation in the Beskydy Mountains, known for its legend and hiking routes.",
+        "website": "",
+        "image_url": "https://placehold.co/150x100",
+        "type": 1
+      },
+      {
+        "title": "Kopřivnice Museum",
+        "description": "A museum showcasing the industrial history and development of Kopřivnice and its famous Tatra brand.",
+        "website": "https://www.tatramuseum.cz/",
+        "image_url": "https://placehold.co/150x100",
+        "type": 2
+      },
+      {
+        "title": "Bílý Kříž",
+        "description": "A scenic mountain area with beautiful landscapes, hiking trails, and a peaceful atmosphere.",
+        "website": "",
+        "image_url": "https://placehold.co/150x100",
+        "type": 1
+      },
+      {
+        "title": "Ostravice Dam",
+        "description": "A picturesque dam with opportunities for swimming, fishing, and relaxing in nature.",
+        "website": "",
+        "image_url": "https://placehold.co/150x100",
+        "type": 1
+      },
+      {
+        "title": "Karviná Chateau Fryštát",
+        "description": "A well-preserved chateau with elegant interiors and a historical park.",
+        "website": "https://www.zamek-frystat.cz/",
+        "image_url": "https://placehold.co/150x100",
+        "type": 3
+      }
+    ]
+}
+  

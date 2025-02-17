@@ -22,4 +22,19 @@
     .main-body{
         padding: 0 1em;
     }
+
+    .filter-btns{
+        display: block;
+    }
+
+    .filter-btns button{
+        display: inline;
+        margin-top: 0.5em;
+    }
+
+    #dir-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1em;
+    }
 }
